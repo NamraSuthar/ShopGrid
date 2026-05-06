@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopGrid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body style="background-color: #f5f5f0;" class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="px-8 py-4 border-b flex items-center justify-between" style="background-color: #ffffff; border-color: #2d6a4f;">
+    <h1 class="text-2xl font-bold tracking-widest" style="color: #2d6a4f;">ShopGrid</h1>
+    <p class="text-sm font-light text-gray-400">Quality products. Simple browsing.</p>
+  </nav>
+
+  <!-- Main -->
+  <main class="px-8 py-8">
+    <div id="loader" class="text-center py-20 text-gray-400 font-light">Loading products...</div>
+    <div id="error" class="hidden text-center py-20 font-medium" style="color: #2d6a4f;"></div>
+    <div id="product-grid" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
